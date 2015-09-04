@@ -53,8 +53,8 @@ myproject:app@1.0.0
 myproject:app-styles@1.0.0
 myproject:app-ui@1.0.0
 myproject:core@1.0.0
-myproject:email@1.0.0
 myproject:lib@1.0.0
+myproject:services-email@1.0.0
 npm-bcrypt@0.7.8_2
 observe-sequence@1.0.6
 ordered-dict@1.0.3

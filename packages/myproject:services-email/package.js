@@ -3,7 +3,7 @@
  *
  */
 Package.describe({
-  name: 'myproject:email',
+  name: 'myproject:services-email',
   summary: 'myproject email service package.',
   version: '1.0.0',
   git: ''
@@ -35,8 +35,8 @@ Package.onUse(function(api) {
 
 Package.onTest(function (api) {
   api.use([
-    //'sanjo:jasmine@0.18.0',
-    'myproject:email'
+    'sanjo:jasmine@0.18.0',
+    'myproject:services-email'
   ], ['client']);
 
 });
