@@ -1,5 +1,5 @@
 /**
- * App stylesheets.
+ * App stylesheets using Bootstrap with LESS.
  *
  */
 Package.describe({
@@ -13,11 +13,9 @@ Package.onUse(function(api) {
 
   api.versionsFrom('METEOR@1.1.0.3');
 
-  // Here you add all your modules, and also define the load order by the way
-  // you order them in this array. MAKE SURE app:lib always goes first!
   var packages = [
     'myproject:lib', // no dependencies
-    'myproject:core', // no dependencies
+    'myproject:core',
   ];
 
   api.use(packages); // all code => this package

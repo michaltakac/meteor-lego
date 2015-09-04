@@ -1,9 +1,9 @@
 /**
- * App UI.
+ * Landing UI.
  *
  */
 Package.describe({
-  name: 'myproject:app-ui',
+  name: 'myproject:landing-ui',
   summary: 'App UI package.',
   version: '1.0.0',
   git: ''
@@ -22,36 +22,31 @@ Package.onUse(function(api) {
 
   api.imply(packages); // this package => application
 
-  // collections
+  // client
   api.addFiles([
-    'lib/client/collections/items.js'
-  ], ['client', 'server']);
-
-  // templates
-  api.addFiles([
-    'lib/client/layouts/_appHeader.html',
-    'lib/client/layouts/_appHeader.js',
-    'lib/client/layouts/_appFooter.html',
-    'lib/client/layouts/appLayout.html',
-    'lib/client/dashboard.html',
-    'lib/client/dashboard.js'
+    'lib/client/layouts/_landingHeader.html',
+    'lib/client/layouts/_landingHeader.js',
+    'lib/client/layouts/_landingFooter.html',
+    'lib/client/layouts/landingLayout.html',
+    'lib/client/home.html',
+    'lib/client/home.js'
   ], 'client');
 
-  // routes
+  // routing
   api.addFiles([
     'lib/router/routes.js'
   ], 'client');
 
   // Last but not least.. (optional)
   api.export([
-    'Items'
+
   ]);
 
 });
 
 Package.onTest(function (api) {
   api.use([
-    'myproject:app-ui',
+    'myproject:landing-ui',
     'sanjo:jasmine@0.18.0'
   ], ['client']);
 

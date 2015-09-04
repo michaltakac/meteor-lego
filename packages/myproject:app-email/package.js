@@ -3,8 +3,8 @@
  *
  */
 Package.describe({
-  name: 'myproject:services-email',
-  summary: 'myproject email service package.',
+  name: 'myproject:app-email',
+  summary: 'Email configuration package.',
   version: '1.0.0',
   git: ''
 });
@@ -36,7 +36,7 @@ Package.onUse(function(api) {
 Package.onTest(function (api) {
   api.use([
     'sanjo:jasmine@0.18.0',
-    'myproject:services-email'
+    'myproject:app-email'
   ], ['client']);
 
 });

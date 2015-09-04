@@ -36,18 +36,13 @@ Package.onUse(function(api) {
     'lib/helpers/stringHelpers.js',
     'lib/client/compatibility/bootstrap.js',
     'lib/client/index.html',
-    'lib/client/layouts/_header.html',
-    'lib/client/layouts/_header.js',
-    'lib/client/layouts/_footer.html',
-    'lib/client/layouts/appLayout.html',
     'lib/client/layouts/loading.html',
     'lib/client/layouts/notFound.html',
   ], 'client');
 
   // client
   api.addFiles([
-    'lib/accounts/config.js',
-    'lib/collections/items.js'
+    'lib/accounts/config.js'
   ]);
 
   // Routing
@@ -85,7 +80,7 @@ Package.onUse(function(api) {
 
   // Last but not least.. (optional)
   api.export([
-    'Items'
+    
   ]);
 
 });

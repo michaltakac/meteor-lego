@@ -12,7 +12,7 @@ Package.onUse(function(api) {
     'myproject:core',
     'myproject:app-ui',
     'myproject:app-styles',
-    'myproject:services-email'
+    'myproject:app-email'
   ], ['client', 'server']);
 
 });

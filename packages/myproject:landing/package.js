@@ -10,7 +10,8 @@ Package.onUse(function(api) {
   api.imply([
     'myproject:lib',
     'myproject:core',
-    'myproject:app-ui'
+    'myproject:landing-ui',
+    'myproject:app-styles'
   ], ['client', 'server']);
 
 });
